@@ -1,4 +1,4 @@
-  @charset "utf-8";
+   @charset "utf-8";
 
     * {margin:0;padding:0;box-sizing:border-box;}
     body {
@@ -30,6 +30,17 @@
     display: inline-block;
     transition: all 0.3s ease;
 }
+.logoy{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-cyan);
+    text-shadow: 0 0 20px var(--primary-cyan);
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
 
 .logo:hover {
     text-shadow: 0 0 30px var(--primary-cyan);
@@ -48,7 +59,7 @@
     text-shadow: 0 0 10px var(--primary-orange);
 }
 
-.logo::after {
+.logo::after ,.logoy::after{
     content: '_';
     animation: blink 1s infinite;
     color: var(--primary-cyan);
